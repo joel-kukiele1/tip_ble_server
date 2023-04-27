@@ -100,7 +100,7 @@ void loop() {
   loadvoltage = busvoltage + (shuntvoltage / 1000);
   
 
-        pCharacteristic->setValue("Hello World");
+        pCharacteristic->setValue(power_mW);
         pCharacteristic->notify();
 
         value++;
